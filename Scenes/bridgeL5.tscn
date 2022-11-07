@@ -3,7 +3,7 @@
 [ext_resource path="res://Renders/bridgeL5.jpg" type="Texture" id=1]
 [ext_resource path="res://Builder/spr_render.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Builder/l_btn.tscn" type="PackedScene" id=3]
-[ext_resource path="res://Builder/l_btn.gd" type="Script" id=4]
+[ext_resource path="res://scripts/l_btn.gd" type="Script" id=4]
 
 [node name="bridgeL5" type="Node2D"]
 
