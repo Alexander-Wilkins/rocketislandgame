@@ -1,4 +1,4 @@
-extends Button
+extends TextureButton
 
 onready var current_scene = $".."
 
@@ -8,6 +8,7 @@ func _ready():
 
 func _on_f_btn_pressed() -> void:
 	Events.emit_signal("change_the_scene", current_scene)
+	print("forward button was pressed")
 	
 
 
