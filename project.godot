@@ -23,6 +23,7 @@ SceneData="*res://scripts/scene_data.gd"
 
 window/size/width=1600
 window/size/height=1000
+mouse_cursor/custom_image="res://Assets/cursor.png"
 window/stretch/aspect="keep_height"
 
 [gui]
