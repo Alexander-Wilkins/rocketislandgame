@@ -15,8 +15,9 @@ run/main_scene="res://root.tscn"
 
 [autoload]
 
-ImportData="*res://scripts/importData.gd"
+ImportData="*res://test/importData.gd"
 Events="*res://scripts/events.gd"
+SceneData="*res://scripts/scene_data.gd"
 
 [display]
 

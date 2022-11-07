@@ -3,8 +3,8 @@
 [ext_resource path="res://Renders/bridgef2.jpg" type="Texture" id=1]
 [ext_resource path="res://Builder/f_btn.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Builder/spr_render.tscn" type="PackedScene" id=6]
-[ext_resource path="res://Builder/mailbox.gd" type="Script" id=7]
-[ext_resource path="res://Builder/f_btn.gd" type="Script" id=9]
+[ext_resource path="res://scripts/mailbox.gd" type="Script" id=7]
+[ext_resource path="res://scripts/f_btn.gd" type="Script" id=9]
 
 [sub_resource type="StyleBoxFlat" id=1]
 bg_color = Color( 0, 0.368627, 1, 0.301961 )
