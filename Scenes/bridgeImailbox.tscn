@@ -32,10 +32,10 @@ margin_right = 1622.0
 margin_bottom = 1012.0
 
 [node name="mailbox_btn" parent="." instance=ExtResource( 5 )]
-margin_left = 575.0
+margin_left = 570.0
 margin_top = 428.0
 margin_right = 713.0
-margin_bottom = 580.0
+margin_bottom = 602.0
 script = ExtResource( 7 )
 
 [connection signal="pressed" from="mailbox_btn" to="mailbox_btn" method="_on_mailbox_btn_pressed"]

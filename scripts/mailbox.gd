@@ -10,7 +10,7 @@ func _ready():
 	connect("mouse_exited", self, "_on_r_btn_mouse_exited")
 
 func _on_mailbox_btn_pressed():
-	print("mailbox was pressed")
+	print("mailbox was opened!")
 
 func _on_r_btn_mouse_entered():
 	Input.set_custom_mouse_cursor(cursor_open)

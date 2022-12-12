@@ -6,6 +6,7 @@ var default_cursor = load("res://Assets/cursor.png")
 
 
 func _ready():
+# automatically connects pressed() signal withouth having to manaully connect via the Godot Editor
 # warning-ignore:return_value_discarded
 	connect("pressed", self, "_on_r_btn_pressed")
 # warning-ignore:return_value_discarded
