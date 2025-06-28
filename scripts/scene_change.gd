@@ -13,7 +13,6 @@ func _ready():
 	Events.connect("change_the_scene_left", Callable(self,"_on_l_btn_pressed"))
 	# Set the custom cursor
 	Input.set_custom_mouse_cursor(_default_cursor)
-	# helo world
 
 	
 ## *** ------------------NAVIGATION BUTTONS----------------------  *** ##
