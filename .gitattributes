@@ -1,2 +1,90 @@
 # Auto detect text files and perform LF normalization
-* text=auto
+* text=aut# Normalize EOL for all files that Git considers text files
+* text=auto eol=lf
+
+# Godot files
+*.gd text diff=csharp
+*.cs text diff=csharp
+*.scene text merge=ours
+*.tscn text merge=ours
+*.tres text merge=ours
+*.godot text
+*.cfg text
+
+# Ensure that these Godot files are always handled as text
+*.gd text
+*.cs text
+*.json text
+*.txt text
+*.md text
+*.yml text
+*.yaml text
+*.xml text
+*.html text
+*.css text
+*.js text
+*.ts text
+
+# Ensure that these files are treated as binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.svg binary
+*.webp binary
+*.tiff binary
+*.bmp binary
+
+# Audio files
+*.mp3 binary
+*.wav binary
+*.ogg binary
+*.m4a binary
+*.flac binary
+
+# Video files
+*.mp4 binary
+*.avi binary
+*.mov binary
+*.mkv binary
+*.webm binary
+
+# 3D models and textures
+*.blend binary
+*.fbx binary
+*.obj binary
+*.gltf binary
+*.glb binary
+*.dae binary
+
+# Fonts
+*.ttf binary
+*.otf binary
+*.woff binary
+*.woff2 binary
+
+# Archives
+*.zip binary
+*.rar binary
+*.7z binary
+*.tar binary
+*.gz binary
+
+# Executable files
+*.exe binary
+*.dll binary
+*.so binary
+*.dylib binary
+
+# Godot export templates and builds
+*.pck binary
+*.tmp binary
+
+# Language files for translation
+*.po text
+*.pot text
+
+# Documentation
+*.rst text
+*.tex text

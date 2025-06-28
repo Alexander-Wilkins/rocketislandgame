@@ -1,6 +1,6 @@
 extends Node
 
-const SCENE_DATA = {
+const SCENE_DATA: Dictionary = {
   "bridgef1": {
 	"forward_scene": preload("res://Scenes/bridgef2.tscn"),
   },
@@ -15,7 +15,7 @@ const SCENE_DATA = {
 	"forward_scene": preload("res://Scenes/bridgef5.tscn"),
   },
   "bridgef5": {
-	"forward_scene": preload("res://Scenes/bridgef6.tscn"),
+	"forward_scene": null,
 	"right_scene": preload("res://Scenes/bridgeR5.tscn"),
 	"left_scene": preload("res://Scenes/bridgeL5.tscn"),
   },

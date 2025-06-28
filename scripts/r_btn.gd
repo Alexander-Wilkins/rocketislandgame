@@ -1,6 +1,6 @@
 extends TextureButton
 
-onready var current_scene = $".."
+@onready var current_scene = $".."
 var right_cursor = load("res://Assets/cursor_right.png")
 var default_cursor = load("res://Assets/cursor.png")
 
@@ -8,11 +8,11 @@ var default_cursor = load("res://Assets/cursor.png")
 func _ready():
 # automatically connects pressed() signal withouth having to manaully connect via the Godot Editor
 # warning-ignore:return_value_discarded
-	connect("pressed", self, "_on_r_btn_pressed")
+	connect("pressed",Callable(self,"_on_r_btn_pressed"))
 # warning-ignore:return_value_discarded
-	connect("mouse_entered", self, "_on_r_btn_mouse_entered")
+	connect("mouse_entered",Callable(self,"_on_r_btn_mouse_entered"))
 # warning-ignore:return_value_discarded
-	connect("mouse_exited", self, "_on_r_btn_mouse_exited")
+	connect("mouse_exited",Callable(self,"_on_r_btn_mouse_exited"))
 
 func _on_r_btn_pressed() -> void:
 	Events.emit_signal("change_the_scene_right", current_scene)

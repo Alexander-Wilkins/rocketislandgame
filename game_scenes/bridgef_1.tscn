@@ -1,0 +1,25 @@
+[gd_scene load_steps=7 format=3 uid="uid://d1un3xkgeo4k"]
+
+[ext_resource type="PackedScene" uid="uid://bn0kupyxvdq5k" path="res://Builder/scene.tscn" id="1_ah2sw"]
+[ext_resource type="PackedScene" uid="uid://18p7obdaebig" path="res://Scenes/bridgef2.tscn" id="2_aqlv8"]
+[ext_resource type="Texture2D" uid="uid://ce103sbky36fr" path="res://Renders/bridgef1.jpg" id="3_5pbyk"]
+[ext_resource type="PackedScene" uid="uid://b5xlb6it8md0k" path="res://Data/ConnectedScenes.tscn" id="3_v8lff"]
+[ext_resource type="Script" uid="uid://36wbvgfg1r72" path="res://game_scenes/forward_hotspot.gd" id="5_ah4t1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rlj1f"]
+size = Vector2(592, 496)
+
+[node name="Bridgef1" instance=ExtResource("1_ah2sw")]
+
+[node name="rendering" parent="." index="0"]
+texture = ExtResource("3_5pbyk")
+
+[node name="ConnectedScenes" parent="." index="1" instance=ExtResource("3_v8lff")]
+scene_array = Array[PackedScene]([ExtResource("2_aqlv8"), null, null, null])
+
+[node name="ForwardHotspot" type="Area2D" parent="." index="2"]
+script = ExtResource("5_ah4t1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ForwardHotspot" index="0"]
+position = Vector2(0, 208)
+shape = SubResource("RectangleShape2D_rlj1f")

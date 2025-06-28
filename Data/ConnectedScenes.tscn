@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://b5xlb6it8md0k"]
+
+[ext_resource type="Script" uid="uid://fncpa2fcdcdo" path="res://ConnectedScenes.gd" id="1_i0qcg"]
+
+[node name="ConnectedScenes" type="Node"]
+script = ExtResource("1_i0qcg")

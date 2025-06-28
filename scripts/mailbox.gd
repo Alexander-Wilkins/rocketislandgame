@@ -5,9 +5,9 @@ var default_cursor = load("res://Assets/cursor.png")
 
 func _ready():
 # warning-ignore:return_value_discarded
-	connect("mouse_entered", self, "_on_r_btn_mouse_entered")
+	connect("mouse_entered",Callable(self,"_on_r_btn_mouse_entered"))
 # warning-ignore:return_value_discarded
-	connect("mouse_exited", self, "_on_r_btn_mouse_exited")
+	connect("mouse_exited",Callable(self,"_on_r_btn_mouse_exited"))
 
 func _on_mailbox_btn_pressed():
 	print("mailbox was opened!")

@@ -6,7 +6,7 @@ extends Area2D
 signal change_image 
 
 func _input_event(_viewport, event, _shape_idx):
-	if event is InputEventMouseButton and event.button_index == BUTTON_LEFT and event.pressed:
+	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
 		self.on_click()
 
 func on_click():

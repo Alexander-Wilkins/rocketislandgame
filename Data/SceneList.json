@@ -1,23 +1,23 @@
 {
   "bridgef1": {
-    "forward_scene": "bridgef2",
-    "right_scene": null,
-    "back_scene": null,
-    "left_scene": null,
-    "interactable": null
+	"forward_scene": "bridgef2",
+	"right_scene": null,
+	"back_scene": null,
+	"left_scene": null,
+	"interactable": null
   },
   "s_mailbox_2": {
-    "s_forward": "s_mailbox_3",
-    "s_right": "s_mailbox_exit1",
-    "s_back": "s_mailbox_exit1",
-    "s_left": "s_mailbox_exit1",
-    "s_interactable": "spr_mailbox"
+	"s_forward": "s_mailbox_3",
+	"s_right": "s_mailbox_exit1",
+	"s_back": "s_mailbox_exit1",
+	"s_left": "s_mailbox_exit1",
+	"s_interactable": "spr_mailbox"
   },
   "s_mailbox_3": {
-    "s_forward": null,
-    "s_right": null,
-    "s_back": null,
-    "s_left": null,
-    "s_interactable": null
+	"s_forward": null,
+	"s_right": null,
+	"s_back": null,
+	"s_left": null,
+	"s_interactable": null
   } 
 }

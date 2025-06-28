@@ -1,10 +1,10 @@
 extends Node2D
 
-onready var current_scene := get_child(0)
-onready var current_buttons := get_child(0).get_child(0)
-onready var scene_dict = ImportData.scene_data 
+@onready var current_scene := get_child(0)
+@onready var current_buttons := get_child(0).get_child(0)
+@onready var scene_dict = ImportData.scene_data 
 
-#onready var forward_scene = preload("res://Scenes/Scene2.tscn").instance()
+#onready var forward_scene = preload("res://Scenes/Scene2.tscn").instantiate()
 
 
 func _on_scene_forward_btn_pressed():

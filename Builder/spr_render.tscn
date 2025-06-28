@@ -1,4 +1,4 @@
-[gd_scene format=2]
+[gd_scene format=3 uid="uid://dl0nomei86g48"]
 
-[node name="spr_render" type="Sprite"]
+[node name="spr_render" type="Sprite2D"]
 centered = false
