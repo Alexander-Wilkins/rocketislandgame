@@ -1,10 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://18p7obdaebig"]
+[gd_scene load_steps=6 format=3 uid="uid://18p7obdaebig"]
 
 [ext_resource type="Texture2D" uid="uid://bqxnmcinn6lu" path="res://Renders/bridgef2.jpg" id="1"]
 [ext_resource type="PackedScene" path="res://Builder/l_btn.tscn" id="2"]
 [ext_resource type="PackedScene" uid="uid://bl0vk733ucq2d" path="res://Builder/f_btn.tscn" id="5"]
 [ext_resource type="PackedScene" uid="uid://dl0nomei86g48" path="res://Builder/spr_render.tscn" id="6"]
-[ext_resource type="PackedScene" uid="uid://b5xlb6it8md0k" path="res://Data/ConnectedScenes.tscn" id="6_1nssh"]
 [ext_resource type="Script" uid="uid://bnw24uumbaxak" path="res://scripts/f_btn.gd" id="9"]
 
 [node name="bridgef2" type="Node2D"]
@@ -13,17 +12,17 @@
 texture = ExtResource("1")
 
 [node name="f_btn" parent="." instance=ExtResource("5")]
-offset_left = 399.0
-offset_top = 34.0
-offset_right = 1271.0
-offset_bottom = 948.0
+offset_left = 528.0
+offset_top = 88.0
+offset_right = 1400.0
+offset_bottom = 1002.0
 script = ExtResource("9")
 
 [node name="l_btn" parent="." instance=ExtResource("2")]
 anchors_preset = 15
-offset_left = 221.0
-offset_top = 617.0
-offset_right = 554.0
-offset_bottom = 942.0
-
-[node name="ConnectedScenes" parent="." instance=ExtResource("6_1nssh")]
+offset_left = 424.0
+offset_top = 648.0
+offset_right = 757.0
+offset_bottom = 973.0
+grow_horizontal = 2
+grow_vertical = 2

@@ -1,0 +1,38 @@
+[gd_scene load_steps=2 format=3 uid="uid://cfpby5x2dmien"]
+
+[ext_resource type="Texture2D" uid="uid://ce103sbky36fr" path="res://Renders/bridgef1.jpg" id="1_k2k7j"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="AspectRatioContainer" type="AspectRatioContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+ratio = 1.639
+stretch_mode = 0
+
+[node name="TextureRect" type="TextureRect" parent="AspectRatioContainer"]
+layout_mode = 2
+texture = ExtResource("1_k2k7j")
+expand_mode = 2
+stretch_mode = 5
+
+[node name="Button" type="Button" parent="AspectRatioContainer/TextureRect"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.338021
+anchor_top = 0.532439
+anchor_right = 0.631771
+anchor_bottom = 0.926586
+offset_right = 8.0
+offset_bottom = 8.0
+metadata/_edit_use_anchors_ = true

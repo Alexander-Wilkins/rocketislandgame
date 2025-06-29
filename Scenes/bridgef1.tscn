@@ -1,23 +1,18 @@
-[gd_scene load_steps=6 format=3 uid="uid://d0rhiterorjjf"]
+[gd_scene load_steps=5 format=3 uid="uid://d0rhiterorjjf"]
 
 [ext_resource type="PackedScene" uid="uid://bl0vk733ucq2d" path="res://Builder/f_btn.tscn" id="1"]
 [ext_resource type="PackedScene" uid="uid://dl0nomei86g48" path="res://Builder/spr_render.tscn" id="2"]
 [ext_resource type="Texture2D" uid="uid://ce103sbky36fr" path="res://Renders/bridgef1.jpg" id="3"]
 [ext_resource type="Script" uid="uid://bnw24uumbaxak" path="res://scripts/f_btn.gd" id="4"]
-[ext_resource type="PackedScene" uid="uid://b5xlb6it8md0k" path="res://Data/ConnectedScenes.tscn" id="5_b268f"]
 
 [node name="bridgef1" type="Node2D"]
 
 [node name="spr_render" parent="." instance=ExtResource("2")]
-position = Vector2(56, 0)
-scale = Vector2(0.648, 0.648)
 texture = ExtResource("3")
 
 [node name="f_btn" parent="." instance=ExtResource("1")]
-offset_left = 263.0
-offset_top = 61.0
-offset_right = 889.0
-offset_bottom = 630.0
+offset_left = 640.0
+offset_top = 440.0
+offset_right = 1266.0
+offset_bottom = 1009.0
 script = ExtResource("4")
-
-[node name="ConnectedScenes" parent="." instance=ExtResource("5_b268f")]

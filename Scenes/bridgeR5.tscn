@@ -1,21 +1,28 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=5 format=3 uid="uid://c8un65nc0je4d"]
 
-[ext_resource path="res://Renders/bridger5.jpg" type="Texture2D" id=1]
-[ext_resource path="res://Builder/spr_render.tscn" type="PackedScene" id=2]
-[ext_resource path="res://Builder/l_btn.tscn" type="PackedScene" id=3]
-[ext_resource path="res://Builder/r_btn.tscn" type="PackedScene" id=4]
+[ext_resource type="Texture2D" uid="uid://dp5nlkg48j1lm" path="res://Renders/bridger5.jpg" id="1"]
+[ext_resource type="PackedScene" uid="uid://dl0nomei86g48" path="res://Builder/spr_render.tscn" id="2"]
+[ext_resource type="PackedScene" path="res://Builder/l_btn.tscn" id="3"]
+[ext_resource type="PackedScene" path="res://Builder/r_btn.tscn" id="4"]
 
 [node name="bridgeR5" type="Node2D"]
 
-[node name="spr_render" parent="." instance=ExtResource( 2 )]
-texture = ExtResource( 1 )
+[node name="spr_render" parent="." instance=ExtResource("2")]
+texture = ExtResource("1")
 
-[node name="l_btn" parent="." instance=ExtResource( 3 )]
-offset_right = 393.0
+[node name="l_btn" parent="." instance=ExtResource("3")]
+anchors_preset = 15
+offset_left = 160.0
+offset_right = 553.0
 offset_bottom = 999.0
+grow_horizontal = 2
+grow_vertical = 2
 
-[node name="r_btn" parent="." instance=ExtResource( 4 )]
-offset_left = 1269.0
-offset_top = -3.0
-offset_right = 1609.0
-offset_bottom = 1007.0
+[node name="r_btn" parent="." instance=ExtResource("4")]
+anchors_preset = 15
+offset_left = 1416.0
+offset_top = -8.0
+offset_right = 1760.0
+offset_bottom = 1008.0
+grow_horizontal = 2
+grow_vertical = 2

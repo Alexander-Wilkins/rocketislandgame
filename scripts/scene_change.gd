@@ -2,7 +2,7 @@ extends Node2D
 
 @onready var CURRENT_SCENE: Node = get_child(0)
 @onready var _scene_library := SceneData.SCENE_DATA
-@onready var _default_cursor := preload("res://Assets/cursor.png")
+@onready var _default_cursor := load("res://Assets/cursor.png")
 
 # when this node is loaded into the root scene
 func _ready():

@@ -1,10 +1,9 @@
 [gd_scene load_steps=3 format=3 uid="uid://cy00v4l12iwx0"]
 
-[ext_resource type="PackedScene" uid="uid://d1un3xkgeo4k" path="res://game_scenes/bridgef_1.tscn" id="2_pyidc"]
+[ext_resource type="PackedScene" uid="uid://d0rhiterorjjf" path="res://Scenes/bridgef1.tscn" id="1"]
 [ext_resource type="Script" uid="uid://2n3ohrrivyh4" path="res://scripts/scene_change.gd" id="5"]
 
 [node name="GameManager" type="Node2D"]
 script = ExtResource("5")
 
-[node name="Bridgef1" parent="." instance=ExtResource("2_pyidc")]
-position = Vector2(948, 553)
+[node name="bridgef1" parent="." instance=ExtResource("1")]

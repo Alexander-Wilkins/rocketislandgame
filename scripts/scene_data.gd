@@ -25,6 +25,7 @@ const SCENE_DATA: Dictionary = {
   },
   "bridgeR5": {
 	"left_scene": preload("res://Scenes/bridgef5.tscn"),
+	"right_scene": preload("res://Scenes/bridgef1.tscn")
   },
   "bridgeImailbox": {
 	"right_scene": preload("res://Scenes/bridgef2.tscn"),
